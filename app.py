@@ -6,7 +6,7 @@ import plotly.express as px
 
 st.set_page_config(layout='wide')
 # upload dataset
-df = pd.read_csv(r'D:\Python\Pandas\Streamlit\Censusdashboard\india.csv')
+df = pd.read_csv('india.csv')
 
 list_of_states = list(df['State'].unique())
 list_of_states.insert( 0,'Overall India')
